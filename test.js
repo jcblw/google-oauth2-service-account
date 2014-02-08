@@ -5,8 +5,6 @@ var request = require('request');
 var key = process.env.KEY;
 
 const calRoot = "https://www.googleapis.com/calendar/v3";
-const calId = "04vr7pj9ccnnkudbr7lust24h4@group.calendar.google.com";
-const cal = "usa__en@holiday.calendar.google.com";
 
 account.auth( decodeURIComponent( key ), {
         iss : process.env.ISS
