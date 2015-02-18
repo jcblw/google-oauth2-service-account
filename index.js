@@ -29,7 +29,6 @@ var auth = function(key, options, callback) {
     };
     jwtHeaderB64 = base64urlEncode(JSON.stringify(jwtHeader));
     iat = Math.floor(new Date().getTime() / 1000);
-    console.log(iat);
     exp = iat + options.expires;
 
     jwtClaim = {
