@@ -11,7 +11,8 @@ var auth = function(key, options, callback) {
         jwtClaimB64,
         signatureInput,
         JWT,
-        signature;
+        signature,
+        jwtHeader;
 
     if ( typeof options === 'function' ) {
         callback = options;
