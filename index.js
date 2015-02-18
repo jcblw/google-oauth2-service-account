@@ -29,6 +29,7 @@ var auth = function(key, options, callback) {
     };
     jwtHeaderB64 = base64urlEncode(JSON.stringify(jwtHeader));
     iat = Math.floor(new Date().getTime() / 1000);
+    console.log(iat);
     exp = iat + options.expires;
 
     jwtClaim = {
@@ -80,12 +81,7 @@ function sign(inStr, key) {
 
     if(key.length==0) return { error : "Invalid key form" };
     sig = crypto.createSign('RSA-SHA256').update(inStr).sign(key, 'base64');
-    //verification
-    verifier = crypto.createVerify("RSA-SHA256");
-    verifier.update(inStr);
-    if(!verifier.verify(key, sig, 'base64')){        
-        return { error : "Signature NOT Verified" }
-    }
+
 
     return base64urlEscape(sig);
 }
