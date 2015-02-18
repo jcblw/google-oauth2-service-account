@@ -80,12 +80,7 @@ function sign(inStr, key) {
 
     if(key.length==0) return { error : "Invalid key form" };
     sig = crypto.createSign('RSA-SHA256').update(inStr).sign(key, 'base64');
-    //verification
-    verifier = crypto.createVerify("RSA-SHA256");
-    verifier.update(inStr);
-    if(!verifier.verify(key, sig, 'base64')){        
-        return { error : "Signature NOT Verified" }
-    }
+
 
     return base64urlEscape(sig);
 }
