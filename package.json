@@ -4,7 +4,7 @@
   "description": "simple way to use a google service account with nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "url" : "https://github.com/jacoblwe20/google-oauth2-service-account.git"
@@ -12,8 +12,9 @@
   "author": "Jacob Lowe ( http://jcbl.ws ) ",
   "license": "MIT",
   "dependencies": {
-    "request": "~2.33.0",
-    "crypto": "0.0.3",
+    "request": "~2.33.0"
+  },
+  "devDependencies":{
     "dotenv": "~0.2.4"
   }
 }
