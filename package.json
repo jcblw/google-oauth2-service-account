@@ -12,9 +12,9 @@
   "author": "Jacob Lowe ( http://jcbl.ws ) ",
   "license": "MIT",
   "dependencies": {
-    "request": "~2.33.0"
+    "request": "~2.81.0"
   },
   "devDependencies":{
-    "dotenv": "~0.2.4"
+    "dotenv": "~4.0.0"
   }
 }
