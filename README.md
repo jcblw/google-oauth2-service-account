@@ -1,5 +1,7 @@
 ### Google Oauth2 for Service Accounts
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jcblw/google-oauth2-service-account.svg)](https://greenkeeper.io/)
+
 this is a simple library that will allow you to use google oauth2 with service accounts. This means you can access you own data from a server without any pesky popups.
 
 ### Usage
